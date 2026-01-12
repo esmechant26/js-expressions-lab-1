@@ -14,12 +14,7 @@
 //! After creating the four variables mentioned above, uncomment the following lines
 //* This way you can export them to the test file, this is essential for the tests to work
 
-module.exports = {
-    // tot_temperature_in_fahrenheit,
-    // tot_temperature_in_celsius,
-    // avg_temperature_in_fahrenheit,
-    // avg_temperature_in_celsius
-};
+
 
 
 const day1TempF = 32 
@@ -53,6 +48,22 @@ const day28TempC = 17
 const day29TempF = 76 
 const day30TempC = 29
 
+const day2TempF = (day2TempC * 9/5) + 32;
+const day4TempF = (day4TempC * 9/5) + 32;
+const day6TempF = (day6TempC * 9/5) + 32;
+const day8TempF = (day8TempC * 9/5) + 32;
+const day10TempF = (day10TempC * 9/5) + 32;
+const day12TempF = (day12TempC * 9/5) + 32;
+const day14TempF = (day14TempC * 9/5) + 32;
+const day16TempF = (day16TempC * 9/5) + 32;
+const day18TempF = (day18TempC * 9/5) + 32;
+const day20TempF = (day20TempC * 9/5) + 32;
+const day22TempF = (day22TempC * 9/5) + 32;
+const day24TempF = (day24TempC * 9/5) + 32;
+const day26TempF = (day26TempC * 9/5) + 32;
+const day28TempF = (day28TempC * 9/5) + 32;
+const day30TempF = (day30TempC * 9/5) + 32;
+
 const day1TempC = (day1TempF - 32) * 5 / 9;
 const day3TempC = (day3TempF - 32) * 5 / 9;
 const day5TempC = (day5TempF - 32) * 5 / 9;
@@ -71,10 +82,20 @@ const day29TempC = (day29TempF - 32) * 5 / 9;
 
 
 
+
+
 const tot_temperature_in_celsius = day1TempC + day2TempC + day3TempC + day4TempC + day5TempC + day6TempC + day7TempC + day8TempC + day9TempC + day10TempC + day11TempC + day12TempC + day13TempC + day14TempC + day15TempC + day16TempC + day17TempC + day18TempC + day19TempC + day20TempC + day21TempC + day22TempC + day23TempC + day24TempC + day25TempC + day26TempC + day27TempC + day28TempC + day29TempC + day30TempC;
-const tot_temperature_in_fahrenheit = (tot_temperature_in_celsius * 9/5) + 32
+const tot_temperature_in_fahrenheit = day1TempF + day2TempF + day3TempF + day4TempF + day5TempF + day6TempF + day7TempF + day8TempF + day9TempF + day10TempF + day11TempF + day12TempF + day13TempF + day14TempF + day15TempF + day16TempF + day17TempF + day18TempF + day19TempF + day20TempF + day21TempF + day22TempF + day23TempF + day24TempF + day25TempF + day26TempF + day27TempF + day28TempF + day29TempF + day30TempF;
 
 const avg_temperature_in_celsius = tot_temperature_in_celsius/30;
 const avg_temperature_in_fahrenheit = (avg_temperature_in_celsius * 9/5) + 32
 
 console.log(avg_temperature_in_celsius, avg_temperature_in_fahrenheit);
+console.log(tot_temperature_in_fahrenheit)
+
+module.exports = {
+    tot_temperature_in_fahrenheit,
+    tot_temperature_in_celsius,
+    avg_temperature_in_fahrenheit,
+    avg_temperature_in_celsius
+};
